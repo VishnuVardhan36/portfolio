@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Vardhan Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Layout styling */
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "nav nav"
+                "about profile"
+                "contact contact";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            height: 100vh;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Navigation Links */
+        .nav {
+            grid-area: nav;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav a:hover {
+            color: #007bff;
+        }
+
+        /* About Me and Education */
+        .about {
+            grid-area: about;
+            padding: 20px;
+            text-align: left;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .about p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .about h2, .about p {
+            color: #333;
+        }
+
+        /* Education Table */
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .education-table th, .education-table td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .education-table th {
+            background-color: #f2f2f2;
+        }
+
+        .education-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Profile Section */
+        .profile {
+            grid-area: profile;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .profile h1 {
+            font-size: 28px;
+            margin: 10px 0;
+            color: #007bff;
+        }
+
+        .profile p {
+            font-size: 20px;
+            margin: 0;
+            color: #333;
+            font-weight: normal;
+        }
+
+        /* Aspiring Sentence */
+        .aspiring {
+            font-size: 18px;
+            color: #007bff;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Slogans Section */
+        .slogans {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .slogans h3 {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .slogans p {
+            font-size: 18px;
+            color: #333;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Details */
+        .contact {
+            grid-area: contact;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h4 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .contact-icons img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s;
+        }
+
+        .contact-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .phone-icon {
+            font-size: 30px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Links -->
+        <div class="nav">
+            <a href="home.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="achievments.html">Achievements</a>
+            <a href="skills.html">Skills</a>
+            <a href="languages.html">Links</a>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="about">
+            <h2>About Me:</h2>
+            <p>I am currently pursuing my graduation in Artificial Intelligence and Data Science. With a strong interest in solving analytical problems, I am eager to contribute to innovative projects and grow within dynamic environments. </p>
+            <h2>Education:</h2>
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>Institution</th>
+                        <th>Course/Program</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.V. Raju Institute of Technology, Narsapur</td>
+                        <td>B.Tech in AI & DS</td>
+                        <td>Ongoing</td>
+                    </tr>
+                    <tr>
+                        <td>Sri Chaitanya Junior College</td>
+                        <td>Intermediate</td>
+                        <td>Percentage: 94.6%</td>
+                    </tr>
+                    <tr>
+                        <td>Ekashila High School</td>
+                        <td>High School</td>
+                        <td>Percentage: 100%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="pic.jpg" alt="Profile Photo">
+            <h1>Vishnu Vardhan Mote</h1>
+            <p>Aspiring AI | DS</p>
+            <div class="aspiring">"Striving for excellence in AI and Data Science"</div>
+            <div class="slogans">
+                <h3>Slogans:</h3>
+                <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+                <p>"Success is the sum of small efforts, repeated day in and day out."</p>
+            </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="contact">
+            <h4>Contact Details:</h4>
+            <div class="contact-icons">
+                <!-- Phone -->
+                <a href="tel:+917036514880" class="phone-icon">📞</a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/vishnu-vardhan-615395259/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/" target="_blank">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

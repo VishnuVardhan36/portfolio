@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #2c3e50;
+        }
+
+        .projects-container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .project-box {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .view-details {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .view-details:hover {
+            text-decoration: underline;
+        }
+
+        .details-box {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .details-box h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .details-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .details-box ul li {
+            margin-bottom: 5px;
+        }
+
+        .project-link {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleDetails(id) {
+            const detailsBox = document.getElementById(id);
+            if (detailsBox.style.display === "none" || detailsBox.style.display === "") {
+                detailsBox.style.display = "block";
+            } else {
+                detailsBox.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Projects</h1>
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-box">
+            <div class="project-title">Project 1: Intrusion Detection System</div>
+            <div class="project-description">A system to monitor and detect unauthorized network access.</div>
+            <span class="view-details" onclick="toggleDetails('details1')">View Details</span>
+            <div class="details-box" id="details1">
+                <h3>Details:</h3>
+                <ul>
+                    <li><strong>Technologies Used:</strong> HTML5, CSS3, Python, Flask, SQLite, Scikit-learn, NumPy, Pandas</li>
+                    <li><strong>Features:</strong>
+                        <ul>
+                            <li>Real-time traffic analysis</li>
+                            <li>Anomaly detection using machine learning</li>
+                            <li>Web-based interface for viewing logs</li>
+                            <li>Alerts for intrusion attempts</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-box">
+            <div class="project-title">Project 2: Portfolio Website</div>
+            <div class="project-description">A personal portfolio website to showcase skills and projects.</div>
+            <span class="view-details" onclick="toggleDetails('details2')">View Details</span>
+            <div class="details-box" id="details2">
+                <h3>Details:</h3>
+                <ul>
+                    <li><strong>Technologies Used:</strong> HTML5, CSS3, JavaScript, Bootstrap, GitHub Pages</li>
+                    <li><strong>Features:</strong>
+                        <ul>
+                            <li>Responsive design for all devices</li>
+                            <li>Interactive navigation with smooth scrolling</li>
+                            <li>Integrated project details and contact form</li>
+                            <li>Links to LinkedIn and GitHub</li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="project-link" href="https://your-portfolio-link.com" target="_blank">Visit Portfolio Website</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
